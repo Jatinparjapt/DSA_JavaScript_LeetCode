@@ -1,0 +1,36 @@
+/**
+ * Find the Index of the First Occurrence in a String
+Easy
+Topics
+Companies
+Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+ 
+
+Example 1:
+
+Input: haystack = "sadbutsad", needle = "sad"
+Output: 0
+Explanation: "sad" occurs at index 0 and 6.
+The first occurrence is at index 0, so we return 0.
+Example 2:
+
+Input: haystack = "leetcode", needle = "leeto"
+Output: -1
+Explanation: "leeto" did not occur in "leetcode", so we return -1.
+ */
+
+
+function findIndexOfFirstOccurrence(haystack, needle){
+    return haystack.indexOf(needle)
+}
+
+function findIndexOfFirstOccurrence(haystack, needle){
+    const regx = new RegExp(needle,"g")
+    const result = haystack.match(regx)
+    // const result = regx.test(haystack)
+    console.log(result)
+}
+let haystack = "sadbutsad", needle = "sad"
+findIndexOfFirstOccurrence(haystack, needle)
+
