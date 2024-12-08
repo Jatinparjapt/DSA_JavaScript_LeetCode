@@ -29,7 +29,6 @@ Explanation: The last word is "joyboy" with length 6.
  */
 
 function lengthOfLastWord(s){
-    
     const stringTrim = s.replace(/\s+/g, ' ').trim()
     const splitString = stringTrim.split(" ")
     return splitString[splitString.length-1].length
