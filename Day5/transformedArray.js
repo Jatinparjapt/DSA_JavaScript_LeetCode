@@ -36,7 +36,7 @@ For nums[2] that is equal to -1, If we move 1 step to left, we reach nums[1]. So
 
 
 function transformedArray(nums) {
-    const n = nums.length;
+    const n = nums.length;          
     const result = new Array(n);
 
     for (let i = 0; i < n; i++) {
@@ -47,7 +47,7 @@ function transformedArray(nums) {
             // Using ((i + nums[i]) % n + n) % n to handle negative indices correctly
             const newIndex = ((i + nums[i]) % n + n) % n;
             result[i] = nums[newIndex];
-        } else {
+        } else {      
             result[i] = nums[i];
         }
     }
